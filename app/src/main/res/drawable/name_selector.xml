@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 可以 更换相应图片实现图片效果 android:drawable="@color/bg_select" -->
+    <item android:state_checked="true" android:drawable="@color/bg_select"/>
+    <item android:state_checked="false" android:drawable="@color/bg_normal"/>
+
+</selector>

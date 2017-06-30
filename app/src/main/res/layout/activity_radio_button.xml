@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.albb.radiobutton.RadioButtonActivity">
+    <RadioButton
+        android:text="测试"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <View
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingLeft="20dp"
+            android:text="请选则你喜欢的英雄:"
+            android:textSize="22dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_marginTop="15dp"
+            android:id="@+id/radio_group"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+
+                android:layout_weight="1"
+                android:text="提莫"
+                android:id="@+id/timor_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <RadioButton
+                android:layout_weight="1"
+                android:text="狐狸"
+                android:id="@+id/huli_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <RadioButton
+                android:id="@+id/huangzi_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="皇子" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/bottom_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RadioButton
+                android:background="@drawable/name_selector"
+                android:textColor="@drawable/text_selector"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_weight="1"
+                android:text="name"
+                android:id="@+id/name_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:background="@drawable/name_selector"
+                android:textColor="@drawable/text_selector"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_weight="1"
+                android:text="age"
+                android:id="@+id/age_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:background="@drawable/name_selector"
+                android:textColor="@drawable/text_selector"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_weight="1"
+                android:text="sex"
+                android:id="@+id/sex_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:background="@drawable/name_selector"
+                android:textColor="@drawable/text_selector"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_weight="1"
+                android:text="set"
+                android:id="@+id/set_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+        </RadioGroup>
+        <FrameLayout
+            android:layout_above="@id/bottom_radiogroup"
+            android:id="@+id/fragment_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
