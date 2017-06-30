@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
- * Created by Lenovo on 2017/6/30.
+ * Created by wyb on 2017/6/30.
  */
 
 public class IBaseFragment extends Fragment {
