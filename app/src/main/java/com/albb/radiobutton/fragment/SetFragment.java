@@ -1,4 +1,4 @@
-package com.albb.radiobutton;
+package com.albb.radiobutton.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.albb.radiobutton.R;
 
 /**
  * Created by wyb on 2017/6/30.

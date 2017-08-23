@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RadioButton</string>
+    <string name="TestActivity_name">TestActivity</string>
+    <string name="MainActivity_name">MainActivity</string>
 </resources>

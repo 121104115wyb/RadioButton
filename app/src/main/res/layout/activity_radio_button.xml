@@ -4,8 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.albb.radiobutton.RadioButtonActivity">
+    tools:context="com.albb.radiobutton.activity.RadioButtonActivity">
     <RadioButton
+        android:onClick="onclick"
+        android:id="@+id/test_button"
         android:text="测试"
         android:layout_width="wrap_content"
         android:layout_height="50dp" />
@@ -32,7 +34,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RadioButton
-
                 android:layout_weight="1"
                 android:text="提莫"
                 android:id="@+id/timor_button"

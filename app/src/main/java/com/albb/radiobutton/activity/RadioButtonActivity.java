@@ -1,14 +1,23 @@
-package com.albb.radiobutton;
+package com.albb.radiobutton.activity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.albb.radiobutton.R;
+import com.albb.radiobutton.fragment.AgeFragment;
+import com.albb.radiobutton.fragment.IBaseFragment;
+import com.albb.radiobutton.fragment.SetFragment;
+import com.albb.radiobutton.fragment.SexFragment;
+import com.albb.radiobutton.test_.TestActivity;
 
 public class RadioButtonActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
     RadioGroup radioGroup;
@@ -35,6 +44,13 @@ public class RadioButtonActivity extends AppCompatActivity implements RadioGroup
         bottomgroup.setOnCheckedChangeListener(this);
         getCheckedRadioButtonId(radioGroup);
         setDefaultFragment();
+    }
+
+    public void onclick(View view){
+        if (view.getId() == R.id.test_button){
+            Intent intent = new Intent(RadioButtonActivity.this, TestActivity.class);
+            startActivity(intent);
+        }
 
     }
 
@@ -51,8 +67,7 @@ public class RadioButtonActivity extends AppCompatActivity implements RadioGroup
     /**
      * 设置group不可点击
      * 必须通过遍历group中所有子radioButton，依次设置
-     * 本人亲自实验，对group本身以及group的父视图进行设置
-     * 都不起作用；
+     * 本人亲自实验，对group本身以及group的父视图进行设置都不起作用；
      * 同样通过找到每一个Radiobutton,分别对他们设置不可点击也能实现，但是代码太过冗杂！
      * @param grop
      * @param enable
